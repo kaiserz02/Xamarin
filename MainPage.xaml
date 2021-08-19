@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PDC6_MOD1"
+             x:Class="PDC6_MOD1.MainPage">
+
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="Static Demo Page"
+                          Detail="Access Constnt or Static Page"
+                          Command="{Binding NavigateCommand }"
+                          CommandParameter="{x:Type local:StaticDemo}"
+                          />
+                <TextCell Text="Reference Demo Page"
+                          Detail="Access Reference Deom  Page"
+                          Command="{Binding NavigateCommand }"
+                          CommandParameter="{x:Type local:ReferenceDemo}"
+                          />
+                <TextCell Text="On Patform Demo Page"
+                          Detail="Access Reference Deom  Page"
+                          Command="{Binding NavigateCommand }"
+                          CommandParameter="{x:Type local:OnPlatformDemo}"
+                          />
+
+                <TextCell Text="OnIdiom Demo Page"
+                          Detail="Access Reference Deom  Page"
+                          Command="{Binding NavigateCommand }"
+                          CommandParameter="{x:Type local:OnIdiomDemo}"
+                          />
+                <TextCell Text="Theme Demo Page"
+                          Detail="Access Reference Deom  Page"
+                          Command="{Binding NavigateCommand }"
+                          CommandParameter="{x:Type local:ThemeBinding}"
+                          />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

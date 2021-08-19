@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDC6_MOD1.OnPlatformDemo">
+    <ContentPage.Content>
+        <BoxView Color="{OnPlatform Yellow, iOS=Blue, Android=Green, UWP=Yellow}"
+                 WidthRequest= "{OnPlatform 250,  Android=400, UWP=250}"
+                 HeightRequest="{OnPlatform 250,  Android=400, UWP=250}"
+                 HorizontalOptions="Center"
+                 />
+        
+    </ContentPage.Content>
+</ContentPage>
